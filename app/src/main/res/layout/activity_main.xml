@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.fm.lvplay.MenuRecyclerView
+        android:id="@+id/rv_all_channel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.fm.lvplay.MenuRecyclerView
+        android:id="@+id/rv_all_channel2"
+        android:layout_width="0dp"
+        android:layout_height="144dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/rv_all_channel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/channel_bg_selector"
+        android:padding="6dp"
+        android:text="I can focus"
+        android:textAllCaps="false"
+        android:textColor="@color/channel_text_color_selector"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btn_change_channel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/channel_bg_selector"
+        android:padding="6dp"
+        android:text="Change channel"
+        android:textAllCaps="false"
+        android:textColor="@color/channel_text_color_selector"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_stop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout >
